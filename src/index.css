@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* GNB */
+
+.gnb {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  height: 60px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111827;
+  color: #fff;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.gnb-menu {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.gnb-menu a {
+  text-decoration: none;
+  color: #e5e7eb;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* NavLink 활성 메뉴 */
+.gnb-menu a.active {
+  background-color: #2563eb;
+  color: #fff;
+}
+
+/* 페이지 공통 영역 */
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 48px;
+}
+
+/* Portfolio 카드 레이아웃 */
+
+.portfolio-grid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.portfolio-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.08);
+}
+
+.portfolio-card h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.portfolio-card p {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.skill-badge {
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background-color: #e5e7eb;
+}
+
+.more-link {
+  font-size: 13px;
+  text-decoration: none;
+  color: #2563eb;
+}
+.more-link:hover {
+  text-decoration: underline;
+}
+
+.thumb {
+  width:100%;
+}
