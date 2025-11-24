@@ -10,18 +10,16 @@
 // )
 
 // main.jsx
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { HashRouter } from 'react-router-dom'   // 추가
 import './index.css'
+import App from './App.jsx'
 
-// BrowserRouter 대신 HashRouter
-import { HashRouter } from 'react-router-dom'
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <HashRouter>
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <HashRouter>      {/* 여기로 감싸기 */}
       <App />
     </HashRouter>
-  </React.StrictMode>,
+  </StrictMode>,
 )
